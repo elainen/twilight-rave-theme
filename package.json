@@ -1,0 +1,15 @@
+{
+  "name": "twilight-rave",
+  "main": "./lib/twilight-rave",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Twilight Rave Atom Theme",
+  "activationEvents": ["twilight-rave:toggle"],
+  "repository": "https://github.com/elainen/twilight-rave-theme",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}

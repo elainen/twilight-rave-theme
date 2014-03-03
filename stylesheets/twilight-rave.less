@@ -1,0 +1,136 @@
+@import "ui-variables";
+
+
+.tree-view-scroller {
+  overflow: hidden;
+
+  .tree-view {
+    font-size: 10px;
+    line-height: 10px;
+
+    .list-item {
+      line-height: 20px !important;
+    }
+
+    .list-group .selected:before,
+    .list-tree {
+      .selected:before {
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+
+.list-tree {
+
+  &.has-collapsable-children .list-nested-item > .list-tree > li {
+    padding-left: 10px;
+  }
+
+  &.has-collapsable-children li.list-item {
+    margin-left: 10px;
+  }
+
+  li.list-nested-item.status-modified > .list-item {
+    color: #1FB6D3;
+  }
+}
+
+
+.editor {
+
+  &.editor-colors {
+    color: #E9E9E9;
+  }
+
+  .gutter .line-number.coffee-error .icon-right {
+    visibility: hidden;
+  }
+
+  .trailing-whitespace {
+    background-color: #E46CA9;
+  }
+
+  .invisible-character,
+  .indent-guide {
+    color: rgba(197, 200, 198, 0.07);
+  }
+}
+
+.source .entity.name.tag,
+.source .entity.other.attribute-name,
+.meta.tag.inline,
+.meta.tag.inline .entity {
+  color: #6D8DAC;
+}
+
+.constant {
+  color: #B285CC;
+
+  &.numeric {
+    color: #5C918E;
+  }
+}
+
+.support {
+
+  &.function {
+    color: #6B8485;
+  }
+
+  &.constant {
+    color: #318D73;
+  }
+
+  &.type.property-name.css {
+    color: #E9E9E9;
+  }
+}
+
+.icon-file-text:before {
+  content: '';
+  height: 0;
+}
+
+.comment {
+  color: #5C5C5C;
+}
+
+.variable {
+  color: #7771B4;
+}
+
+.string {
+  color: #66A335;
+}
+
+.storage {
+  color: #1B7560;
+}
+
+.entity {
+  color: #4F8AD6;
+}
+
+// Coffee Lint
+.coffee-error {
+  background-color: #FF0000;
+}
+
+
+// Scrollbar
+::-webkit-scrollbar {
+  border: 4px solid #212325;
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #121314;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #292929;
+  border-radius: 10px;
+}
