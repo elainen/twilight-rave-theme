@@ -93,6 +93,40 @@
   color: #6D8DAC;
 }
 
+.line .source.js-semantic {
+  color: #949494;
+
+  &.string {
+    color: #66A335;
+  }
+
+  &.identifier {
+    color: #7A6BA8;
+
+    &.color-index-* {
+      color: #5BD061;
+    }
+
+    &.color-index-1,
+    &.color-index-5 {
+      color: #5375BE;
+    }
+
+    &.color-index-8 {
+      color: #45AB98;
+    }
+
+    &.color-index-4 {
+      color: #CBCBCB;
+    }
+  }
+
+  &.keyword {
+    color: #85BBCF;
+    font-weight: 100;
+  }
+}
+
 .constant {
   color: #B285CC;
 
